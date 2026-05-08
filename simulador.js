@@ -17,7 +17,8 @@ const velocidad = Math.floor(Math.random() * (15 - 5) + 5);
 const datos = JSON.stringify({
     sensorId: 'sensor-tdea-01',
     velocidad: velocidad,
-    location: { lat: 6.2442, lng: -75.5812 },
+    // 6.279681, -75.583859
+    location: { lat: 6.279681, lng: -75.583859 },
     timestamp: new Date().toISOString()
   });
 
