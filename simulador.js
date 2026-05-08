@@ -1,9 +1,14 @@
+require('dotenv').config();
+
 const Mqtt = require('azure-iot-device-mqtt').Mqtt;
 const DeviceClient = require('azure-iot-device').Client;
 const Message = require('azure-iot-device').Message;
 
+const connectionString = process.env.CONNECTION_STRING;
 
-const connectionString = 'HostName=traffic-sensor-hub-tda.azure-devices.net;DeviceId=sensor-tdea-01;SharedAccessKey=vRsoQXr1iEodEkS46AUO9DaPxkxIKh2s0TRCvlBpM1k=';
+if (!connectionString) {
+  throw new Error('CONNECTION_STRING no está definida en las variables de entorno');
+}
 
 const client = DeviceClient.fromConnectionString(connectionString, Mqtt);
 

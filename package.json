@@ -12,6 +12,7 @@
   "type": "commonjs",
   "dependencies": {
     "azure-iot-device": "^1.18.4",
-    "azure-iot-device-mqtt": "^1.16.4"
+    "azure-iot-device-mqtt": "^1.16.4",
+    "dotenv": "^16.0.0"
   }
 }
