@@ -72,7 +72,7 @@ El payload se encapsula en una clase especial `Message` suministrada por el SDK 
 
 ---
 
-## 🎯 Caso de Uso en la Vida Real
+##  Caso de Uso en la Vida Real
 
 En un entorno de producción o proyecto de **Ciudades Inteligentes (Smart Cities)**, este simulador sustituye temporalmente a los sensores físicos en la vía pública. Los datos enviados a **Azure IoT Hub** son comúnmente consumidos por:
 
